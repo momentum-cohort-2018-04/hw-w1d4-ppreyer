@@ -70,4 +70,15 @@
     float: left;
     width: 45%;
   }
+  .projects__image {
+    float: right;
+    width: 45%;
+    margin-left: 5%;
+    height: 300px;
+  }
+  
+  .projects__header, .projects__title {
+    margin-top: 20px;
+  }
+
 }
