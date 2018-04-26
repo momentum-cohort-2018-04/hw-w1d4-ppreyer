@@ -9,3 +9,35 @@
   margin: 0 auto;
   padding: 10px;
 }
+
+.nav {
+  padding: 10px;
+}
+
+.nav__list {
+  list-style: none;
+}
+
+.nav__list__item {
+  display: inline;
+  margin: 10px;
+}
+
+.portfolio__image {
+  max-width: 100%;
+}
+
+.personal__wrapper {
+  margin-top: 10px;
+}
+
+.personal__intro, .personal__name, .personal__title, .personal__bio {
+  margin-top: 10px;
+}
+
+/* css for mobile breakpoints */
+@media screen and (min-width: 992px) {
+  .nav {
+    float: right;
+  }
+}
