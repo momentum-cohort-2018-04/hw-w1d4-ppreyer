@@ -40,4 +40,18 @@
   .nav {
     float: right;
   }
+  .clearfix {
+    clear: both;
+  }
+  .portfolio__image__wrapper {
+    float: left;
+    width: 45%;
+    margin-right: 10%;
+    border-style: dotted;
+    border-color: black;
+  }
+  .personal__wrapper {
+    float: left;
+    width: 45%;
+  }
 }
