@@ -35,6 +35,22 @@
   margin-top: 10px;
 }
 
+.projects__image {
+  max-width: 100%;
+}
+
+.projects__header, .projects__title, .projects__image, .projects__description {
+  margin-top: 10px;
+}
+
+.projects__description {
+  margin-bottom: 10px;
+}
+
+.projects__wrapper a {
+  margin: 5px;
+}
+
 /* css for mobile breakpoints */
 @media screen and (min-width: 992px) {
   .nav {
