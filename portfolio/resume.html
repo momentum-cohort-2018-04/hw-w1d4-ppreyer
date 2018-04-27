@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1.0,width=device-width" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     
   </head>  
@@ -22,14 +22,26 @@
        </ul>
      </nav>
     </header>
+    <header class="header__native__nav">
+        <div class="header__native__menu"></div>
+        <div class="header__native__menu"></div>
+        <div class="header__native__menu"></div>
+        <div class="header__native__dropdown__content">
+          <a href="#">Home</a>
+          <a href="#">Projects</a>
+          <a href="#">Resume</a>
+        </div>
+    </header>
     <h2 class="resume__title">Resumé</h2>
-    <div class="resume__name__wrapper">
       <h3 class="resume__name">Parker Preyer</h3>
-      <p class="resume_email">Email:          parker.preyer1@gmail.com
-      </p>
-      <p class="resume__phone">Phone: 919-740-4206</p>
-      <p class="resume__summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      </p>
+      <div class="resume__name__wrapper">
+        <p class="resume__email">Email: parker.preyer1@gmail.com
+        </p>
+        <div class="clearfix"></div>
+        <p class="resume__phone">Phone: 919-740-4206</p>
+        <div class="clearfix"></div>
+        <p class="resume__summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
     </div>
     <div class="employment__wrapper">
       <h3 class="employment">Employment History</h3>
@@ -45,8 +57,22 @@
       <p class="education__date">2011-2014</p>
       <p class="education__major">B.A. History</p>  
     </div>
+    <div class="clearfix">
+    </div>
    </div>
-
-    
   </body>
+  <footer class="footer">
+      <div class="footer__div">
+        <a href="#" class="fa fa-facebook"></a>
+      </div>
+      <div class="footer__div">
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+      <div class="footer__div">
+        <a href="#" class="fa fa-linkedin"></a>
+      </div>
+      <div class="footer__div">
+        <a href="#" class="fa fa-github"></a>
+      </div>    
+    </footer>
 </html>
