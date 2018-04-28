@@ -13,16 +13,22 @@
 
 .header__title {
   text-align: center;
-  color: #404040;
+  color: #4A5263;
   font-size: 24px;
   position: relative;
   top: 18px;
 }
 
 .container {
+  height: 800px;
   max-width: 90%;
   margin: 0 auto;
+  position: relative;
   /* padding: 10px; */
+}
+
+body {
+  position: relative;
 }
 
 .nav {
@@ -31,6 +37,7 @@
 
 .nav__list {
   list-style: none;
+  margin-top: 20px;
 }
 
 .nav__list__item {
@@ -40,11 +47,13 @@
 
 .nav__list__item a {
   text-decoration: none;
-  color: black;
+  color: #4A5263;
+  font-weight: bold;
 }
 
 .nav__list__item a:hover {
-  color: pink;
+    border-bottom: 2px solid #4A5263;
+    text-decoration: none; 
 }
 
 .header__native__nav {
@@ -55,13 +64,14 @@
 .header__native__menu {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: #4A5263;
   margin: 6px 0;
 }
 
 .header__native__dropdown__content {
   display: none;
-  background-color: #f9f9f9;
+  background-color: #4A5263;
+  font-weight: bold;;
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -69,7 +79,8 @@
 }
 
 .header__native__dropdown__content a {
-  color: black;
+  color: white;
+  font-weight: bold;
   padding: 12px 16px;
   text-decoration: none;
   text-align: center;
@@ -77,7 +88,7 @@
 }
 
 .header__native__dropdown__content a:hover {
-  background-color: #f1f1f1;
+  background-color: #404040;
 }
 
 .header__native__nav:hover .header__native__dropdown__content {
@@ -90,6 +101,8 @@
 
 .personal__wrapper {
   margin-top: 10px;
+  background-color: #F3F3F3;
+  padding: 5px 30px;
 }
 
 .personal__intro, .personal__name, .personal__title, .personal__bio {
@@ -115,6 +128,7 @@
 .personal__name {
   color: #404040;
   font-size: 24px;
+  font-weight: bold;
 }
 
 .personal__title {
@@ -124,57 +138,40 @@
 }
 
 .personal__bio {
-  color: #BFBFBF;
+  color: #404040;
   font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
 }
 
 .footer {
   width: 100%;
-  height: 200px;
+  height: 50px;
   text-align: center;
   margin-top: 80px;
+  background-color: #4A5263;
 }
 
-.footer__div {
+.footer__icon {
   height: 50px;
   width: 20%;
   display: inline-block;
   margin: 5px;
   position: relative;
   top: 50px;
+  border-style: solid;
+  border-color: black;
 }
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 75px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-background: #3B5998;
-color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
+.fa-facebook, .fa-twitter, .fa-github, .fa-linkedin {
   color: white;
+  margin-top: 8px;
+  float: right;
+  margin: 14px;
 }
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-github {
-  background: #dd4b39;
-  color: white;
+.fa-facebook:hover, .fa-twitter:hover, .fa-github:hover, .fa-linkedin:hover {
+  color: black;
 }
 
 .resume__title, .resume__name, .resume__email, .resume__phone, .resume__phone, .resume__summary, .employment, .employment__company, .employment__date, .employment__summary, .education__school, .education__date, .education.major {
@@ -186,18 +183,84 @@ color: white;
   .nav {
     display: none;
   }
-  /* .portfolio__image__wrapper {
-    margin-top: 45px;
-  } */
-  .header, .header__title, .header__native__nav {
-    max-width: 100%;
-    height: 50px;
+
+  .header__native__nav {
+    background-color: #F2F2F2;
+    height: 100px;
   }
+
+  .header {
+    display: none;
+  }
+
+  .header__native__title {
+    text-align: center;
+    color: #4A5263;
+    font-size: 24px;
+    position: relative;
+    top: 18px;
+  }
+
   .header__native__menu__wrapper {
     margin-left: 10px;
+    margin-top: 30px;
+  }
+  .display__box {
+    height: 200px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    background-color: #F3F3F3;
+    position: relative;
+    text-align: center;
+  }
+  .display__box i {
+    margin-top: 20px;
+  }
+  .display__box h3 {
+    margin-top: 40px;
+    color:#4A5263;
+  }
+  .display__box__text {
+    float: left;
+  }
+  .display__box:hover {
+    background-color: #4A5263;
+  }
+  .display__box:hover .fa-code {
+    color: white;
+  }
+  .display__box:hover h3 {
+    color: white;
+  }
+  .fa-code {
+    color:#4A5263;
+  }
+  .display__box:hover .fa-file {
+    color: white;
+  }
+  .fa-file {
+    color:#4A5263;
+  }
+
+  .display__box:hover .fa-address-card {
+    color: white;
+  }
+  .fa-address-card {
+    color:#4A5263;
   }
 }
-
+@media screen and (max-width: 832px) {
+  .display__box {
+    height: 200px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    background-color: #F3F3F3;
+    position: relative;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 732px) {
   .nav {
     float: right;
@@ -205,7 +268,7 @@ color: white;
 
   .header {
     height: 105px;
-    background-color: #B9F4BC; 
+    background-color: #F2F2F2; 
   }
 
   .header__native__nav {
@@ -217,7 +280,7 @@ color: white;
   .portfolio__image__wrapper {
     float: left;
     width: 45%;
-    margin-right: 10%;
+    margin-right: 5%;
     margin-top: 15px;
   }
   .personal__wrapper {
@@ -225,6 +288,55 @@ color: white;
     width: 45%;
     margin-top: 15px;
   }
+  .display__wrapper {
+    height: 400px;
+    max-width: 100%;
+  }
+  .display__box {
+    height: 220px;
+    min-width: 32%;
+    margin: 5px 5px;
+    float: left;
+    background-color: #F3F3F3;
+    position: relative;
+    text-align: center;
+  }
+  .display__box i {
+    margin-top: 20px;
+  }
+  .display__box h3 {
+    margin-top: 40px;
+    color:#4A5263;
+  }
+  .display__box__text {
+    float: left;
+  }
+  .display__box:hover {
+    background-color: #4A5263;
+  }
+  .display__box:hover .fa-code {
+    color: white;
+  }
+  .display__box:hover h3 {
+    color: white;
+  }
+  .fa-code {
+    color:#4A5263;
+  }
+  .display__box:hover .fa-file {
+    color: white;
+  }
+  .fa-file {
+    color:#4A5263;
+  }
+
+  .display__box:hover .fa-address-card {
+    color: white;
+  }
+  .fa-address-card {
+    color:#4A5263;
+  }
+
   .projects__image {
     float: right;
     width: 45%;
@@ -245,5 +357,13 @@ color: white;
     float: right;
   }
 
+  .footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #4A5263;
+    
+  }
 
 }
