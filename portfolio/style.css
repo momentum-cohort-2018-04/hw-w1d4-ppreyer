@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, h7, button, a {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+p, li {
+  font-family: 'Nunito', sans-serif;
+}
+
 a {
   text-decoration: none;
 
@@ -202,6 +210,10 @@ body {
 }
 .resume__name, .employment, .education {
   color: #838383;
+}
+
+.resume__summary, .resume__email, .resume__phone, .employment__position {
+  font-size: 0.9rem;
 }
 
 .resume__summary, .resume__email, .resume__phone, .employment__date, .education__school, .education__date, .education__school {
