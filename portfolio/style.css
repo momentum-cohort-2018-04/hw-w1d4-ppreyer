@@ -23,6 +23,12 @@ button a {
   background-color: #838383; 
 }
 
+hr {
+  color: #838383;
+  margin-top: 20px;
+  border-width: 2px;
+}
+
 /* .header {
   background-color: #B9F4BC;
   max-height: 80px;
@@ -184,6 +190,35 @@ body {
   line-height: 25px;
 }
 
+.resume__name__wrapper, .resume__name {
+  margin-top: 20px;
+}
+.resume__name {
+  color: #404040;
+}
+
+.education, .employment {
+  margin-top: 15px;
+}
+.resume__name, .employment, .education {
+  color: #838383;
+}
+
+.resume__summary, .resume__email, .resume__phone, .employment__date, .education__school, .education__date, .education__school {
+  color:#404040;
+  font-weight: bold;
+}
+
+.employment__company {
+  color: #838383;
+  font-weight: bold;
+}
+
+.employment__c {
+  color: #404040;
+  font-weight: bold;
+}
+
 .footer {
   width: 100%;
   height: 50px;
@@ -214,13 +249,23 @@ body {
   color: black;
 }
 
-.resume__title, .resume__name, .resume__email, .resume__phone, .resume__phone, .resume__summary, .employment, .employment__company, .employment__date, .employment__summary, .education__school, .education__date, .education.major {
+.resume__title, .resume__email, .resume__phone, .resume__phone, .resume__summary, .employment, .employment__company, .employment__date, .employment__summary, .education__school, .education__date, .education.major {
   margin-top: 10px;
+}
+
+.employment__position {
+  margin-left: 25px;
+  color:#404040;
+  font-weight: bold;
 }
 
 /* css for mobile breakpoints */
 @media screen and (max-width: 731px) {
   .nav {
+    display: none;
+  }
+
+  br {
     display: none;
   }
 
@@ -305,7 +350,7 @@ body {
     width: 100%;
     height: 50px;
     text-align: center;
-    margin-top: 140px;
+    margin-top: 60px;
     background-color: #4A5263;
   }
 }
@@ -314,6 +359,12 @@ body {
     text-align: center;
   }
 } */
+
+@media screen and (max-width: 730px) {
+  .footer__resume { 
+    margin-top: 120px;
+  }
+}
 @media screen and (max-width: 832px) {
   .display__box {
     height: 200px;
@@ -434,7 +485,7 @@ body {
     width: 100%;
     height: 50px;
     text-align: center;
-    margin-top: 250px;
+    margin-top: 180px;
     background-color: #4A5263;
   }
 
